@@ -8,8 +8,11 @@ public class swaptwonumber {
 
                 System.out.println(a+" " + "before swapping"+" "+b);//3 before swapping 7
 
+
         int k=a+c;
+
         int m=b+c;
+
         System.out.println(m+" "+ "after swapped"+" "+k);
 
 
