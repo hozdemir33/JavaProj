@@ -10,7 +10,7 @@ public class swaptwonumber {
 
         int k=a+c;
         int m=b+c;
-        System.out.println(m+ " =="+k);
+        System.out.println(m+" "+ "after swapped"+" "+k);
 
 
     }
