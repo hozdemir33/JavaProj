@@ -43,8 +43,13 @@ public class list {
          for(String fruits:list1){
              System.out.println(fruits);
 
-
          }
 
+
+
+
+
     }
+
+
 }
