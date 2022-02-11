@@ -1,5 +1,6 @@
 
 import java.util.*;
+import java.util.List;
 
 public class Collections {
 
@@ -27,11 +28,70 @@ public class Collections {
 //        markList.add(400);
 //        //System.out.println(markList);
 //
-         ArrayList<String> nameList = new ArrayList<String>();
-//
-         nameList.add("hamdi");
-         nameList.add("yusuf");
-         nameList.add("huseyin");
+
+        List<String> kk = new ArrayList<>();
+        kk.add("apple");
+        kk.add("orages");
+        kk.add("banana");
+        kk.add("dates");
+
+        Iterator<String> ss = kk.iterator();
+
+        while (ss.hasNext()){
+            System.out.println(ss.next());
+
+        }
+        System.out.println("======");
+
+        ArrayList<Integer> numList= new ArrayList<>();
+
+        numList.add(3);
+        numList.add(14);
+        numList.add(2);
+        numList.add(13);
+        numList.add(12);
+
+       Iterator<Integer> nn= numList.iterator();
+
+       while(nn.hasNext()){
+           System.out.print(nn.next());
+       }
+
+        System.out.println("=====");
+
+
+       //Difference between Iterator and ListIterator
+
+        List<String> list1=new ArrayList<>();
+
+        list1.add("a");
+        list1.add("b");
+        list1.add("c");
+
+        System.out.println(list1);//[a,b,c]
+
+                Iterator<String> val=  list1.iterator();
+
+                while (val.hasNext()){
+                 String element= val.next();
+                    System.out.println(element);
+
+                }
+
+
+                //Within Iterator, there is NO hasPrevious() and previous() method---only one directional
+                //Iterator, NO add()-- cannot add new elements by using Iterator
+                //Iterator, No set()--cannot modify the elements by using Iterator
+
+                //Both Iterator and ListIterator have the remove() method.
+                //Iterator can be used in other Collections(Map,Set,List),but ListIterator can be used JUST in Lists
+
+
+
+
+          }
+       }
+
 //
 //        //loop
 //
@@ -45,13 +105,4 @@ public class Collections {
 //            System.out.println(s);
 //        }
 
-       // System.out.println("==========");
-        //iterator
-        Iterator<String> it = nameList.iterator();
-        while (it.hasNext()) {
-            System.out.println(it.next());
 
-
-        }
-    }
-}
