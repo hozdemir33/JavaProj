@@ -86,13 +86,30 @@ public class Collections {
                 //Both Iterator and ListIterator have the remove() method.
                 //Iterator can be used in other Collections(Map,Set,List),but ListIterator can be used JUST in Lists
 
+        ArrayList<String> cars=new ArrayList<>();
 
+                cars.add("ford");
+                cars.add("mazda");
+                cars.add("toyota");
+                cars.add("kia");
+                cars.add("kia");
 
+                    System.out.println(cars);
+                    System.out.println(cars.get(0));
+                    System.out.println(cars.get(2));
+
+                    System.out.println(cars.size());
+
+                    //loop
+                for(int i=0; i<cars.size();i++){
+                    System.out.print(cars.get(i)+" ");
+
+                }
 
           }
        }
 
-//
+
 //        //loop
 //
 //        for (int i = 0; i < nameList.size(); i++) {
@@ -103,6 +120,9 @@ public class Collections {
 //        //for each loop
 //        for (String s : nameList) {
 //            System.out.println(s);
-//        }
+
+
+
+
 
 
