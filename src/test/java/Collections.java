@@ -1,7 +1,7 @@
 
 import java.util.*;
 import java.util.List;
-
+import java.util.HashMap;
 public class Collections {
 
     public static void main(String[] args) {
@@ -37,13 +37,13 @@ public class Collections {
 
         Iterator<String> ss = kk.iterator();
 
-        while (ss.hasNext()){
+        while (ss.hasNext()) {
             System.out.println(ss.next());
 
         }
         System.out.println("======");
 
-        ArrayList<Integer> numList= new ArrayList<>();
+        ArrayList<Integer> numList = new ArrayList<>();
 
         numList.add(3);
         numList.add(14);
@@ -51,18 +51,18 @@ public class Collections {
         numList.add(13);
         numList.add(12);
 
-       Iterator<Integer> nn= numList.iterator();
+        Iterator<Integer> nn = numList.iterator();
 
-       while(nn.hasNext()){
-           System.out.print(nn.next());
-       }
+        while (nn.hasNext()) {
+            System.out.print(nn.next());
+        }
 
         System.out.println("=====");
 
 
-       //Difference between Iterator and ListIterator
+        //Difference between Iterator and ListIterator
 
-        List<String> list1=new ArrayList<>();
+        List<String> list1 = new ArrayList<>();
 
         list1.add("a");
         list1.add("b");
@@ -70,45 +70,60 @@ public class Collections {
 
         System.out.println(list1);//[a,b,c]
 
-                Iterator<String> val=  list1.iterator();
+        Iterator<String> val = list1.iterator();
 
-                while (val.hasNext()){
-                 String element= val.next();
-                    System.out.println(element);
+        while (val.hasNext()) {
+            String element = val.next();
+            System.out.println(element);
 
-                }
+        }
 
 
-                //Within Iterator, there is NO hasPrevious() and previous() method---only one directional
-                //Iterator, NO add()-- cannot add new elements by using Iterator
-                //Iterator, No set()--cannot modify the elements by using Iterator
+        //Within Iterator, there is NO hasPrevious() and previous() method---only one directional
+        //Iterator, NO add()-- cannot add new elements by using Iterator
+        //Iterator, No set()--cannot modify the elements by using Iterator
 
-                //Both Iterator and ListIterator have the remove() method.
-                //Iterator can be used in other Collections(Map,Set,List),but ListIterator can be used JUST in Lists
+        //Both Iterator and ListIterator have the remove() method.
+        //Iterator can be used in other Collections(Map,Set,List),but ListIterator can be used JUST in Lists
 
-        ArrayList<String> cars=new ArrayList<>();
+        ArrayList<String> cars = new ArrayList<>();
 
-                cars.add("ford");
-                cars.add("mazda");
-                cars.add("toyota");
-                cars.add("kia");
-                cars.add("kia");
+        cars.add("ford");
+        cars.add("mazda");
+        cars.add("toyota");
+        cars.add("kia");
+        cars.add("kia");
 
-                    System.out.println(cars);
-                    System.out.println(cars.get(0));
-                    System.out.println(cars.get(2));
+        System.out.println(cars);
+        System.out.println(cars.get(0));
+        System.out.println(cars.get(2));
 
-                    System.out.println(cars.size());
+        System.out.println(cars.size());
 
-                    //loop
+        //loop
 
-        for(int i=0; i<cars.size();i++){
-                    System.out.print(cars.get(i)+" ");
+        for (int i = 0; i < cars.size(); i++) {
+            // System.out.print(cars.get(i)+" ");
 
-                }
+        }
 
-          }
-       }
+
+        HashMap<String, String> names = new HashMap<String, String>();
+
+        names.put("hamdi", "sulo");
+        names.put("ali", "velo");
+        names.put("halim", "melek");
+
+        System.out.println(names);
+
+
+
+        }
+
+    }
+
+
+
 
 
 //        //loop
