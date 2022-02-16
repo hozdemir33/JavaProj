@@ -101,7 +101,8 @@ public class Collections {
                     System.out.println(cars.size());
 
                     //loop
-                for(int i=0; i<cars.size();i++){
+
+        for(int i=0; i<cars.size();i++){
                     System.out.print(cars.get(i)+" ");
 
                 }
