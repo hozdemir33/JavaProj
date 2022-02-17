@@ -94,11 +94,11 @@ public class Collections {
         cars.add("kia");
         cars.add("kia");
 
-        System.out.println(cars);
-        System.out.println(cars.get(0));
-        System.out.println(cars.get(2));
-
-        System.out.println(cars.size());
+//        System.out.println(cars);
+//        System.out.println(cars.get(0));
+//        System.out.println(cars.get(2));
+//
+//        System.out.println(cars.size());
 
         //loop
 
@@ -116,9 +116,12 @@ public class Collections {
 
         System.out.println(names);
 
-
+        for(int i=0; i<names.size();i++){
 
         }
+        System.out.println(names);
+        }
+
 
     }
 
