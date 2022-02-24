@@ -1,3 +1,5 @@
+import java.util.Arrays;
+
 public class tryCatch {
 
     public static void main(String[] args) {
@@ -14,7 +16,25 @@ public class tryCatch {
 
         }
 
+
+        try {
+
+            int a = 0;
+
+            System.out.println(4 / 0);//  it is an Arithmetic exceptions
+
+
+        } catch (Exception e) {
+
+            System.out.println("This exception is an Aritmetic Exception");
+
+        }
+
+
     }
 
 }
+
+
+
 
