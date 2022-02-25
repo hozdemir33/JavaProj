@@ -111,7 +111,10 @@ public class Collections {
         HashMap<String, String> names = new HashMap<String, String>();
 
         names.put("hamdi", "sulo");
+
         names.put("ali", "velo");
+
+
         names.put("halim", "melek");
 
         System.out.println(names);

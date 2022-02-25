@@ -1,10 +1,21 @@
+import java.util.ArrayList;
+
 public class Arrays {
 
     public static void main(String[] args) {
 
-//
-//        String[] name = {"ali", "veli", "nano", "hamdi", "sultan"};
-//
+
+        String[] name = {"ali", "veli", "nano", "hamdi", "sultan"};
+
+        for(String kk:name){
+            System.out.println(kk);
+
+        }
+
+
+
+
+
 //        {
 //            String counter = "";
 //
